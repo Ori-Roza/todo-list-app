@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package todo;
+
+message CreateTodoRequest {
+  string name = 1;
+  bool completed = 2;
+}
+
+message ReadTodoRequest {
+  int32 id = 1;
+}
+
+message UpdateTodoRequest {
+  int32 id = 1;
+  string name = 2;
+  bool completed = 3;
+}
+
+
+message DeleteTodoRequest {
+  int32 id = 1;
+}
+
+message ListTodosRequest {}
+
+

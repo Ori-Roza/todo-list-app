@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package todo;
+
+import 'todo.proto';
+
+message CreateTodoResponse {
+  Todo todo = 1;
+}
+
+
+message ReadTodoResponse {
+  Todo todo = 1;
+}
+
+
+message UpdateTodoResponse {
+  Todo todo = 1;
+}
+
+
+message DeleteTodoResponse {
+  bool success = 1;
+}
+
+
+message ListTodosResponse {
+  repeated Todo todos = 1;
+}

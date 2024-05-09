@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package todo;
+
+import 'requests.proto';
+import 'responses.proto';
+
+
+service TodoService {
+  rpc CreateTodo(CreateTodoRequest) returns (CreateTodoResponse);
+  rpc ReadTodo(ReadTodoRequest) returns (ReadTodoResponse);
+  rpc UpdateTodo(UpdateTodoRequest) returns (UpdateTodoResponse);
+  rpc DeleteTodo(DeleteTodoRequest) returns (DeleteTodoResponse);
+  rpc ListTodos(ListTodosRequest) returns (ListTodosResponse);
+}
